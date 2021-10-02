@@ -2,7 +2,6 @@ const navLi     = document.querySelector('.allNavA');
 const menuIcon  = document.querySelector('.menu-icon');
 
 navLi.style.maxHeight = '0px';
-navLi.style.display = 'none'
 
 menuIcon.onclick = function clickMenu(){
     
@@ -13,7 +12,7 @@ menuIcon.onclick = function clickMenu(){
         }
     }else{
         navLi.style.maxHeight = '0px'
-        navLi.style.display = 'none'
-    }
+            navLi.style.display = 'none'
+        }
 
 }

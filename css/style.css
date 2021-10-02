@@ -217,7 +217,7 @@ li {
     right: 0;
     z-index: 2;
     height: 200px;
-    display: inline-table;
+    display: none;
   }
   nav ul li {
     display: table-row-group;
