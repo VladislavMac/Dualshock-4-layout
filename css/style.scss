@@ -18,6 +18,11 @@ a{
 
 }
 
+li{
+    list-style: none;
+    display: inline-block;
+    color: #000;
+}
 .navbar{
     width: 100%;
     display: flex;
@@ -27,16 +32,13 @@ a{
         cursor: pointer;
         margin: 30px 0 ;// only up and bottom
     }
+
     nav{
         flex: 1;
         text-align: right;
         .hide{
             display: none;
         }
-        li{
-            list-style: none;
-            display: inline-block;
-            color: #000;
             a{
                 margin-right: 30px;
                 text-decoration: none;
@@ -45,7 +47,6 @@ a{
             a:hover{
                 color: #ff5ea2;
             }
-        }
     }
     .menu-icon{
         width: 25px;
@@ -55,6 +56,15 @@ a{
 }
 
 .wrapper{
+    h2{
+        font-size: 54px;
+    }
+    h3{
+        font-size: 30px;
+        color: #707070; 
+        font-weight: 100;
+        margin: 20px 0 10px;
+    }
     .row{
         display: flex;
         justify-content: space-between;
@@ -64,15 +74,7 @@ a{
             flex-basis: 40%;
             position: relative;
             margin-left: 50px;
-            h2{
-                font-size: 54px;
-            }
-            h3{
-                font-size: 30px;
-                color: #707070; 
-                font-weight: 100;
-                margin: 20px 0 10px;
-            }
+
             p{
                 font-size: 16px;
                 color: #b7b7b7;
@@ -118,14 +120,14 @@ a{
         }
     }
 
+    .controller{
+        width: 90%;
+    }
     .col-2{
         position: relative;
         flex-basis: 60%;
         display: flex;
         align-items: center;
-        .controller{
-            width: 90%;
-        }
         .color-box{
             position:absolute;
             right: 0;
@@ -170,10 +172,11 @@ a{
             top: 75px;
             right: 0;
             z-index: 2;
-            display: flex;
+            height: 200px;
+            display: inline-table;
             li{
-                padding: 5px;
-                display: block;
+                display: table-row-group;
+                padding: 10px;
                 margin-top: 10px;
                 margin-bottom: 10px;
                 min-height: 100px;
@@ -198,7 +201,12 @@ a{
         flex-basis: 100%;
         margin-bottom: 50px;
         .controller{
-            width: 77%;
+            width: 90%;
+        }
+    }
+    .add-btn{
+        p{
+            display: none;
         }
     }
     .color-box{

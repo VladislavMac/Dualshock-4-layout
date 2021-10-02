@@ -18,6 +18,12 @@ a {
   color: #000;
 }
 
+li {
+  list-style: none;
+  display: inline-block;
+  color: #000;
+}
+
 .navbar {
   width: 100%;
   display: -webkit-box;
@@ -45,19 +51,13 @@ a {
   display: none;
 }
 
-.navbar nav li {
-  list-style: none;
-  display: inline-block;
-  color: #000;
-}
-
-.navbar nav li a {
+.navbar nav a {
   margin-right: 30px;
   text-decoration: none;
   font-size: 20px;
 }
 
-.navbar nav li a:hover {
+.navbar nav a:hover {
   color: #ff5ea2;
 }
 
@@ -65,6 +65,17 @@ a {
   width: 25px;
   cursor: pointer;
   display: none;
+}
+
+.wrapper h2 {
+  font-size: 54px;
+}
+
+.wrapper h3 {
+  font-size: 30px;
+  color: #707070;
+  font-weight: 100;
+  margin: 20px 0 10px;
 }
 
 .wrapper .row {
@@ -85,17 +96,6 @@ a {
       flex-basis: 40%;
   position: relative;
   margin-left: 50px;
-}
-
-.wrapper .row .col-1 h2 {
-  font-size: 54px;
-}
-
-.wrapper .row .col-1 h3 {
-  font-size: 30px;
-  color: #707070;
-  font-weight: 100;
-  margin: 20px 0 10px;
 }
 
 .wrapper .row .col-1 p {
@@ -156,6 +156,10 @@ a {
   top: 8px;
 }
 
+.wrapper .controller {
+  width: 90%;
+}
+
 .wrapper .col-2 {
   position: relative;
   -ms-flex-preferred-size: 60%;
@@ -166,10 +170,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.wrapper .col-2 .controller {
-  width: 90%;
 }
 
 .wrapper .col-2 .color-box {
@@ -216,13 +216,12 @@ a {
     top: 75px;
     right: 0;
     z-index: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 200px;
+    display: inline-table;
   }
   nav ul li {
-    padding: 5px;
-    display: block;
+    display: table-row-group;
+    padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     min-height: 100px;
@@ -251,7 +250,10 @@ a {
     margin-bottom: 50px;
   }
   .col-2 .controller {
-    width: 77%;
+    width: 90%;
+  }
+  .add-btn p {
+    display: none;
   }
   .color-box {
     -webkit-transform: translateX(75px);
